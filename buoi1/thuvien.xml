@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thuvien>
+    <sach>
+        <tieude>XML Cơ Bản</tieude>
+        <tacgia>Võ Kiều My</tacgia>
+        <nam>2025</nam>
+        <theloai>Lập trình</theloai>
+    </sach>
+    <sach>
+        <tieude>XML Cơ Bản 1</tieude>
+        <tacgia>Lê Văn Mộng </tacgia>
+        <nam>2025</nam>
+        <theloai>Lập trình 1</theloai>
+    </sach>
+    <sach>
+        <tieude>XML Cơ Bản 2</tieude>
+        <tacgia>Bui Huu Nhat</tacgia>
+        <nam>2025</nam>
+        <theloai>Lập trình 2</theloai>
+    </sach>
+</thuvien>

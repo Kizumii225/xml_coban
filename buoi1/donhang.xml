@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders xmlns:order="http://company.com/order" xmlns:prod="http://company.com/product">
+    <order:order maDon="001" tenKhach="Võ Kiều My" ngay="16-09-2025">
+        <prod:item maSp="001" soluong="2" gia="500.000đ">
+            <prod:name>Điên thoại 1</prod:name>
+        </prod:item>
+        <prod:item maSp="002" soluong="1" gia="200.000đ">
+            <prod:name>Laptop</prod:name>
+        </prod:item>
+    </order:order>
+    
+    <order:order maDon="002" tenKhach="Võ Kiều Mỹ" ngay="15-09-2025">
+        <prod:item maSp="003" soluong="2" gia="500.000đ">
+            <prod:name>Điên thoại 4</prod:name>
+        </prod:item>
+        <prod:item maSp="005" soluong="1" gia="200.000đ">
+            <prod:name>Laptop 7</prod:name>
+        </prod:item>
+        <prod:item maSp="008" soluong="1" gia="250.000đ">
+            <prod:name>Tai nghe 7</prod:name>
+        </prod:item>
+        <prod:item maSp="006" soluong="1" gia="250.000đ">
+            <prod:name>Sạc 7</prod:name>
+        </prod:item>
+    </order:order>
+</orders>

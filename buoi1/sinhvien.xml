@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lop>
+    <sinhvien>
+        <hoten>Võ Kiều My</hoten>
+        <mssv>KTPM2211059</mssv>
+        <danhsachmon>
+            <mon>
+                <tenmon>XML</tenmon>
+                <diem>10.0</diem>
+            </mon>
+            <mon>
+                <tenmon>XML 2</tenmon>
+                <diem>10.0</diem>
+            </mon>
+        </danhsachmon>
+    </sinhvien>
+    <sinhvien>
+        <hoten>Lê Văn Mộng</hoten>
+        <mssv>KTPM2211055</mssv>
+        <danhsachmon>
+            <mon>
+                <tenmon>XML</tenmon>
+                <diem>10.0</diem>
+            </mon>
+        </danhsachmon>
+    </sinhvien>
+    <sinhvien>
+        <hoten>Bui Huu Nhat</hoten>
+        <mssv>KTPM2211005</mssv>
+        <danhsachmon>
+            <mon>
+                <tenmon>XML 2</tenmon>
+                <diem>10.0</diem>
+            </mon>
+        </danhsachmon>
+    </sinhvien>
+</lop>

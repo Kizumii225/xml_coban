@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cuahang>
+    <product maSP="P001" loaiSP="Điện tử" gia="500" donvi="USD" />
+    <product maSP="P002" loaiSP="Thời trang" gia="300" donvi="VND" />
+    <product maSP="P003" loaiSP="Gia dụng" gia="150" donvi="USD" />
+</cuahang>
