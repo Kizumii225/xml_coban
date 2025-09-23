@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE thuvien SYSTEM "thuvien.dtd">
+
+<thuvien>
+    <sach id="S01">
+        <ten>XML Cơ Bản</ten>
+        <tacgia>Võ Kiều My</tacgia>
+        <nam>2025</nam>
+        <theloai>Công Nghệ</theloai>
+    </sach>
+    <sach id="S02">
+        <ten>XML Cơ Bản 2</ten>
+        <tacgia>Bui Huu Nhat</tacgia>
+        <nam>2025</nam>
+        <theloai>Công Nghệ</theloai>
+    </sach>
+    <sach id="S03">
+        <ten>XML Cơ Bản 3</ten>
+        <tacgia>Lê Văn Mộng</tacgia>
+        <nam>2025</nam>
+        <theloai>Công Nghệ</theloai>
+    </sach>
+</thuvien>

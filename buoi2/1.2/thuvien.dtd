@@ -1,0 +1,7 @@
+<!ELEMENT thuvien (sach+)>
+<!ELEMENT sach(ten,tacgia,nam,theloai)>
+<!ATTLIST sach id ID #REQUIERD>
+<!ELEMENT ten (#PCDATA)>
+<!ELEMENT tacgia (#PCDATA)>
+<!ELEMENT nam (#PCDATA)>
+<!ELEMENT theloai (#PCDATA)>

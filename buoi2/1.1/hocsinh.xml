@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "hocsinh.dtd">
+<students>
+    <student id="sv01">
+        <name>Võ Kiều My</name>
+        <dod>2004-02-29</dod>
+        <major>Kỹ Thuật Phần Mềm</major>
+    </student>
+    <student id="sv02">
+        <name>Bui Huu Nhat</name>
+        <dod>2004-02-28</dod>
+        <major>Kỹ Thuật Phần Mềm 2</major>
+    </student>
+    <student id="sv03">
+        <name>Lê Văn Mộng</name>
+        <dod>2004-02-27</dod>
+        <major>Kỹ Thuật Phần Mềm 3</major>
+    </student>
+</students>
