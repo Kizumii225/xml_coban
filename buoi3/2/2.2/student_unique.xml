@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<school xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="student_unique.xsd">
+    <student>
+        <id>SV01</id>
+        <name>Võ Kiều My</name>
+        <date>2004-02-29</date>
+    </student>
+    <student>
+        <id>SV02</id>
+        <name>Võ Kiều My 1</name>
+        <date>2004-02-29</date>
+    </student>
+    <student>
+        <id>SV03</id>
+        <name>Võ Kiều My 2</name>
+        <date>2004-02-29</date>
+    </student>
+</school>
