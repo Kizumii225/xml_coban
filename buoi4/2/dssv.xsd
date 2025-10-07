@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3schools.com"
+           xmlns="http://www.w3schools.com"
+           elementFormDefault="qualified" >
+
+    <xs:simpleType name="TenType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z\s]+"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MaType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- PHẦN TỬ GỐC -->
+    <xs:element name="dssv">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="khoa" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tenKhoa" type="TenType"/>
+                        
+                            <xs:element name="lop" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tenLop" type="TenType"/>
+
+                                        <xs:element name="sinhVien" minOccurs="1" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="hoTen">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="50"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
+                                                    <xs:element name="email">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="150"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
+                                                    <xs:element name="diaChi" type="xs:string"/>
+
+                                                    <xs:element name="sdt">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="0[0-9]{9}"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+
+                                                <!-- Mã sinh viên -->
+                                                <xs:attribute name="masv">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:maxLength value="10"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+
+                                    <!-- Mã lớp -->
+                                    <xs:attribute name="maLop" type="maType" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+
+                        <!-- Mã khoa -->
+                        <xs:attribute name="maKhoa" type="maType" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Khóa chính Khoa -->
+        <xs:key name="KhoaKey">
+            <xs:selector xpath="khoa"/>
+            <xs:field xpath="@maKhoa"/>
+        </xs:key>
+
+        <!-- Khóa chính Lớp -->
+        <xs:key name="LopKey">
+            <xs:selector xpath="khoa/lop"/>
+            <xs:field xpath="@maLop"/>
+        </xs:key>
+
+        <!-- Khóa chính Sinh viên -->
+        <xs:key name="SinhVienKey">
+            <xs:selector xpath="khoa/lop/sinhVien"/>
+            <xs:field xpath="@masv"/>
+        </xs:key>
+
+        <!-- Khóa ngoại: Lớp thuộc Khoa -->
+        <xs:keyref name="FK_Lop_Khoa" refer="KhoaKey">
+            <xs:selector xpath="khoa/lop"/>
+            <xs:field xpath="../@maKhoa"/>
+        </xs:keyref>
+
+        <!-- Khóa ngoại: Sinh viên thuộc Lớp -->
+        <xs:keyref name="FK_SV_Lop" refer="LopKey">
+            <xs:selector xpath="khoa/lop/sinhVien"/>
+            <xs:field xpath="../@maLop"/>
+        </xs:keyref>
+
+    </xs:element>
+</xs:schema>
