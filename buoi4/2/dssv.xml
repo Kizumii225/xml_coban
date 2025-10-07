@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<dssv xmlns="http://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.w3schools.com dssv.xsd">
+    <khoa maKhoa="K01">
+        <tenKhoa>Công Nghệ Thông Tin</tenKhoa>
+        <lop maLop="L01">
+            <tenLop>Kỹ Thuật Phần Mềm</tenLop>
+            <sinhVien masv="SV01">
+                <hoTen>Võ Kiều My</hoTen>
+                <email>kieumy01@gmail.com</email>
+                <diaChi>Cần Thơ</diaChi>
+                <sdt>0397474049</sdt>
+            </sinhVien>
+        </lop>
+    </khoa>
+
+    <khoa maKhoa="K02">
+        <tenKhoa>Công Nghệ Thông Tin 2</tenKhoa>
+        <lop maLop="L03">
+            <tenLop>Kỹ Thuật Phần Mềm 3</tenLop>
+            <sinhVien masv="SV03">
+                <hoTen>Lê Văn Mộng</hoTen>
+                <email>vanmong01@gmail.com</email>
+                <diaChi>Cần Thơ</diaChi>
+                <sdt>0397474049</sdt>
+            </sinhVien>
+        </lop>
+        <lop maLop="L04">
+            <tenLop>Kỹ Thuật Phần Mềm 4</tenLop>
+            <sinhVien masv="SV04">
+                <hoTen>Võ Kiều My 4</hoTen>
+                <email>kieumy01@gmail.com</email>
+                <diaChi>Cần Thơ</diaChi>
+                <sdt>0397474049</sdt>
+            </sinhVien>
+        </lop>
+    </khoa>
+
+    <khoa maKhoa="K05">
+        <tenKhoa>Công Nghệ Thông Tin 5</tenKhoa>
+        <lop maLop="L05">
+            <tenLop>Kỹ Thuật Phần Mềm 5</tenLop>
+            <sinhVien masv="SV05">
+                <hoTen>Bui Huu Nhat</hoTen>
+                <email>huunhat01@gmail.com</email>
+                <diaChi>Cần Thơ</diaChi>
+                <sdt>0397474049</sdt>
+            </sinhVien>
+
+            <sinhVien masv="SV06">
+                <hoTen>Bui Huu Nhat 2</hoTen>
+                <email>huunhat201@gmail.com</email>
+                <diaChi>Cần Thơ</diaChi>
+                <sdt>0397474049</sdt>
+            </sinhVien>
+        </lop>
+    </khoa>
+
+</dssv>
